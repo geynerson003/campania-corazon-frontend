@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function enviarComentario(texto) {
         try {
-            await fetch("https://campania-corazonp-backend-production.up.railway.app/comentarios/guardar", {
+            await fetch("https://graceful-empathy-production.up.railway.app/comentarios/guardar", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function cargarComentarios() {
         try {
-            const response = await fetch("https://campania-corazonp-backend-production.up.railway.app/comentarios/listar");
+            const response = await fetch("https://graceful-empathy-production.up.railway.app/comentarios/listar");
             const comentarios = await response.json();
             comentariosLista.innerHTML = "";
 
