@@ -1,5 +1,5 @@
 function countdown() {
-    const targetDate = new Date('2025-03-01T00:00:00').getTime();
+    const targetDate = new Date('2025-02-28T00:00:00').getTime();
     const timer = document.getElementById('timer');
     
     function updateCountdown() {
