@@ -147,6 +147,17 @@ button:hover{
     padding-top: 10px;
 }
 
+.comentario-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Línea de separación */
+    margin-bottom: 10px;
+}
+
+.comentario-item:last-child {
+    border-bottom: none; /* Elimina la línea del último comentario */
+}
+
+
 /* Estilos del modal */
 .modal {
     display: none;

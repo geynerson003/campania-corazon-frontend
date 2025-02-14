@@ -37,10 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const comentarios = await response.json();
             comentariosLista.innerHTML = "";
 
-            comentarios.forEach(comentario => {
+            comentarios.forEach((comentario, index) => {
+                const comentarioDiv = document.createElement("div");
+                comentarioDiv.classList.add("comentario-item"); // Clase para aplicar estilo
+    
                 const p = document.createElement("p");
                 p.textContent = comentario.texto;
-                comentariosLista.appendChild(p);
+    
+                comentarioDiv.appendChild(p);
+                comentariosLista.appendChild(comentarioDiv);
             });
         } catch (error) {
             console.error("Error al cargar comentarios:", error);
